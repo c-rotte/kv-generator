@@ -9,16 +9,20 @@ class KVParser {
 private:
 
 	string function;
-	std::string kv = "empty";
-	char* table;
+	std::vector<int> tableEntries;
+	std::vector<int> tableValues;
 
 	std::vector<char> getChars(void);
 
-	bool evaluate(char chars[], bool values[]);
+	bool evaluate(vector<char> chars, vector<bool> values);
 
 	std::string evaluateWithBrackets(std:: string currFunction);
 
 	std::string evaluateRecursive(std::string currFunction);
+
+	int* expandKV(int* currentKV, int xDim, int yDim, bool horizonzal);
+
+	bool getValueForEntry(int entry);
 
 public:
 
@@ -31,8 +35,7 @@ public:
 	void printDiagram(void);
 
 	~KVParser() {
-		delete table;
-		table = NULL;
+		
 	}
 
 };
