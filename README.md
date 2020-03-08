@@ -9,6 +9,7 @@ The initial diagram will be of the format
 
 <img src="https://user-images.githubusercontent.com/54217818/76154731-b17eb280-60e1-11ea-88bf-10ebf1ee276e.png" width=200>
 
+(lexicographical order of atoms)
 and expands for every additional atom by mirroring itself:
 
 <img src="https://user-images.githubusercontent.com/54217818/76154750-fb679880-60e1-11ea-8191-e8f0063b4127.png" width = 200>
